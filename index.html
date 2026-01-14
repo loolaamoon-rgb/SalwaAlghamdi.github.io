@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملف الإنجاز - سلوى حمدان الغامدي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="images/moe-logo.png" alt="شعار وزارة التعليم" class="moe-logo">
+            </div>
+            <div class="title-section">
+                <h1>ملف الإنجاز الإلكتروني</h1>
+                <p>شواهد الأداء الوظيفي</p>
+            </div>
+            <div class="vision-logo">
+                <img src="images/moe-vision-logo.jpg" alt="رؤية 2030" class="vision-img">
+            </div>
+        </div>
+    </header>
+
+    <!-- Teacher Info Card -->
+    <section class="teacher-card">
+        <div class="card-container">
+            <div class="teacher-avatar">
+                <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="teacher-info">
+                <h2>سلوى حمدان الغامدي</h2>
+                <p class="subject"><i class="fas fa-laptop-code"></i> معلمة مهارات رقمية وتقنية رقمية</p>
+                <p class="school"><i class="fas fa-school"></i> متوسطة وثانوية أم أيمن بركة بنت ثعلبة بعراء</p>
+                <p class="principal"><i class="fas fa-user-shield"></i> مديرة المدرسة: أ. رحمة سعيد حربي</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <button class="nav-btn active" data-category="all">جميع المعايير</button>
+            <button class="nav-btn" data-category="duties">الواجبات الوظيفية</button>
+            <button class="nav-btn" data-category="community">المجتمع والتواصل</button>
+            <button class="nav-btn" data-category="teaching">التدريس والتعلم</button>
+            <button class="nav-btn" data-category="activities">النشاط الطلابي</button>
+        </div>
+    </nav>
+
+    <!-- Criteria Grid -->
+    <main class="criteria-section">
+        <div class="criteria-grid">
+            
+            <!-- معيار 1: أداء الواجبات الوظيفية -->
+            <div class="criteria-card" data-category="duties">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>أداء الواجبات الوظيفية</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">الالتزام بالحضور والانصراف وتنفيذ المهام الموكلة</p>
+                    <div class="evidence-section">
+                        <h4><i class="fas fa-folder-open"></i> الشواهد</h4>
+                        <div class="evidence-list" id="evidence-1">
+                            <div class="empty-state">
+                                <i class="fas fa-plus-circle"></i>
+                                <p>أضيفي الشواهد هنا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- معيار 2: التفاعل مع المجتمع المهني -->
+            <div class="criteria-card" data-category="community">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-users"></i></div>
+                    <h3>التفاعل مع المجتمع المهني</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">المشاركة في مجتمعات التعلم المهنية والتعاون مع الزميلات</p>
+                    <div class="evidence-section">
+                        <h4><i class="fas fa-folder-open"></i> الشواهد</h4>
+                        <div class="evidence-list" id="evidence-2">
+                            <div class="empty-state">
+                                <i class="fas fa-plus-circle"></i>
+                                <p>أضيفي الشواهد هنا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- معيار 3: التفاعل مع أولياء الأمور -->
+            <div class="criteria-card" data-category="community">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-hands-helping"></i></div>
+                    <h3>التفاعل مع أولياء الأمور</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">التواصل الفعال مع أولياء الأمور وإشراكهم في العملية التعليمية</p>
+                    <div class="evidence-section">
+                        <h4><i class="fas fa-folder-open"></i> الشواهد</h4>
+                        <div class="evidence-list" id="evidence-3">
+                            <div class="empty-state">
+                                <i class="fas fa-plus-circle"></i>
+                                <p>أضيفي الشواهد هنا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- معيار 4: التنويع في استراتيجيات التدريس -->
+            <div class="criteria-card" data-category="teaching">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>التنويع في استراتيجيات التدريس</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">استخدام استراتيجيات تدريس متنوعة تراعي الفروق الفردية</p>
+                    <div class="evidence-section">
+                        <h4><i class="fas fa-folder-open"></i> الشواهد</h4>
+                        <div class="evidence-list" id="evidence-4">
+                            <div class="empty-state">
+                                <i class="fas fa-plus-circle"></i>
+                                <p>أضيفي الشواهد هنا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- معيار 5: تحسين نتائج المتعلمين -->
+            <div class="criteria-card" data-category="teaching">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>تحسين نتائج المتعلمين</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">العمل على رفع مستوى التحصيل الدراسي للطالبات</p>
+                    <div class="evidence-section">
+                        <h4><i class="fas fa-folder-open"></i> الشواهد</h4>
+                        <div class="evidence-list" id="evidence-5">
+                            <div class="empty-state">
+                                <i class="fas fa-plus-circle"></i>
+                                <p>أضيفي الشواهد هنا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- معيار 6: إعداد وتنفيذ خطة التعلم -->
+            <div class="criteria-card" data-category="teaching">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-clipboard-list"></i></div>
+                    <h3>إعداد وتنفيذ خطة التعلم</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">التخطيط الجيد للدروس وتنفيذها بفاعلية</p>
+                    <div class="evidence-section">
+                        <h4><i class="fas fa-folder-open"></i> الشواهد</h4>
+                        <div class="evidence-list" id="evidence-6">
+                            <div class="empty-state">
+                                <i class="fas fa-plus-circle"></i>
+                                <p>أضيفي الشواهد هنا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- معيار 7: توظيف تقنيات ووسائل التعلم -->
+            <div class="criteria-card" data-category="teaching">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-laptop"></i></div>
+                    <h3>توظيف تقنيات ووسائل التعلم</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">استخدام التقنية والوسائل التعليمية المناسبة لتحقيق الأهداف</p>
+                    <div class="evidence-section">
+                        <h4><i class="fas fa-folder-open"></i> الشواهد</h4>
+                        <div class="evidence-list" id="evidence-7">
+                            <div class="empty-state">
+                                <i class="fas fa-plus-circle"></i>
+                                <p>أضيفي الشواهد هنا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- معيار 8: تهيئة بيئة تعليمية -->
+            <div class="criteria-card" data-category="teaching">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-door-open"></i></div>
+                    <h3>تهيئة بيئة تعليمية</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">توفير بيئة صفية آمنة ومحفزة للتعلم</p>
+                    <div class="evidence-section">
+                        <h4><i class="fas fa-folder-open"></i> الشواهد</h4>
+                        <div class="evidence-list" id="evidence-8">
+                            <div class="empty-state">
+                                <i class="fas fa-plus-circle"></i>
+                                <p>أضيفي الشواهد هنا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- معيار 9: الإدارة الصفية -->
+            <div class="criteria-card" data-category="teaching">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-user-cog"></i></div>
+                    <h3>الإدارة الصفية</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">إدارة الصف بفاعلية وتنظيم الوقت والأنشطة</p>
+                    <div class="evidence-section">
+                        <h4><i class="fas fa-folder-open"></i> الشواهد</h4>
+                        <div class="evidence-list" id="evidence-9">
+                            <div class="empty-state">
+                                <i class="fas fa-plus-circle"></i>
+                                <p>أضيفي الشواهد هنا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- معيار 10: تحليل نتائج المتعلمين -->
+            <div class="criteria-card" data-category="teaching">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>تحليل نتائج المتعلمين</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">تحليل نتائج الطالبات وتشخيص مستوياتهن</p>
+                    <div class="evidence-section">
+                        <h4><i class="fas fa-folder-open"></i> الشواهد</h4>
+                        <div class="evidence-list" id="evidence-10">
+                            <div class="empty-state">
+                                <i class="fas fa-plus-circle"></i>
+                                <p>أضيفي الشواهد هنا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- معيار 11: تنوع أساليب التقويم -->
+            <div class="criteria-card" data-category="teaching">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-check-double"></i></div>
+                    <h3>تنوع أساليب التقويم</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">استخدام أساليب تقويم متنوعة لقياس تحقق الأهداف</p>
+                    <div class="evidence-section">
+                        <h4><i class="fas fa-folder-open"></i> الشواهد</h4>
+                        <div class="evidence-list" id="evidence-11">
+                            <div class="empty-state">
+                                <i class="fas fa-plus-circle"></i>
+                                <p>أضيفي الشواهد هنا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- معيار 12: إعداد خطة النشاط الطلابي -->
+            <div class="criteria-card" data-category="activities">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <h3>إعداد خطة النشاط الطلابي</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">إعداد خطة مزمنة ومعتمدة لبرامج وفعاليات النشاط الطلابي</p>
+                    <div class="evidence-section">
+                        <h4><i class="fas fa-folder-open"></i> الشواهد</h4>
+                        <div class="evidence-list" id="evidence-12">
+                            <div class="empty-state">
+                                <i class="fas fa-plus-circle"></i>
+                                <p>أضيفي الشواهد هنا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- معيار 13: تهيئة البيئة للأنشطة -->
+            <div class="criteria-card" data-category="activities">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>تهيئة البيئة للأنشطة</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">تهيئة البيئة المدرسية للبرامج والأنشطة الطلابية</p>
+                    <div class="evidence-section">
+                        <h4><i class="fas fa-folder-open"></i> الشواهد</h4>
+                        <div class="evidence-list" id="evidence-13">
+                            <div class="empty-state">
+                                <i class="fas fa-plus-circle"></i>
+                                <p>أضيفي الشواهد هنا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- معيار 14: دعم المتعلمين للأنشطة -->
+            <div class="criteria-card" data-category="activities">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h3>دعم المتعلمين للأنشطة</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">دعم المتعلمين وفق احتياجاتهم وميولهم للأنشطة</p>
+                    <div class="evidence-section">
+                        <h4><i class="fas fa-folder-open"></i> الشواهد</h4>
+                        <div class="evidence-list" id="evidence-14">
+                            <div class="empty-state">
+                                <i class="fas fa-plus-circle"></i>
+                                <p>أضيفي الشواهد هنا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- معيار 15: تحفيز المشاركة في الأنشطة -->
+            <div class="criteria-card" data-category="activities">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-award"></i></div>
+                    <h3>تحفيز المشاركة في الأنشطة</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">تحفيز المتعلمين على المشاركة في الأنشطة المدرسية</p>
+                    <div class="evidence-section">
+                        <h4><i class="fas fa-folder-open"></i> الشواهد</h4>
+                        <div class="evidence-list" id="evidence-15">
+                            <div class="empty-state">
+                                <i class="fas fa-plus-circle"></i>
+                                <p>أضيفي الشواهد هنا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>ملف الإنجاز الإلكتروني - سلوى حمدان الغامدي</p>
+            <p>العام الدراسي 1446 - 1447 هـ</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

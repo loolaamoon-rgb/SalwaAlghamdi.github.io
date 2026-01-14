@@ -1,0 +1,448 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1a7a6c;
+    --primary-dark: #0d5c51;
+    --primary-light: #2db39e;
+    --secondary-color: #4a90a4;
+    --accent-color: #f0b429;
+    --bg-light: #f8fafb;
+    --bg-card: #ffffff;
+    --text-dark: #2c3e50;
+    --text-light: #6c7a89;
+    --border-color: #e1e8ed;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    padding: 25px 40px;
+    box-shadow: var(--shadow);
+}
+
+.header-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-section {
+    flex: 0 0 auto;
+}
+
+.moe-logo {
+    height: 80px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.title-section {
+    flex: 1;
+    text-align: center;
+}
+
+.title-section h1 {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.title-section p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.vision-logo {
+    flex: 0 0 auto;
+}
+
+.vision-img {
+    height: 70px;
+    width: auto;
+    border-radius: 8px;
+}
+
+/* Teacher Card */
+.teacher-card {
+    padding: 40px 20px;
+    background: linear-gradient(180deg, var(--primary-dark) 0%, var(--bg-light) 50%);
+}
+
+.card-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    box-shadow: var(--shadow-hover);
+    border: 1px solid var(--border-color);
+}
+
+.teacher-avatar {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.teacher-avatar i {
+    font-size: 50px;
+    color: #fff;
+}
+
+.teacher-info h2 {
+    font-size: 1.8rem;
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.teacher-info p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.teacher-info p i {
+    color: var(--primary-color);
+    width: 25px;
+}
+
+.teacher-info .subject {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Navigation */
+.main-nav {
+    background: var(--bg-card);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    padding: 12px 25px;
+    border: 2px solid var(--border-color);
+    background: var(--bg-card);
+    color: var(--text-dark);
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.nav-btn.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Criteria Section */
+.criteria-section {
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.criteria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 25px;
+}
+
+/* Criteria Card */
+.criteria-card {
+    background: var(--bg-card);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.criteria-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.criteria-card.hidden {
+    display: none;
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.card-header h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    flex: 1;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-description {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+/* Evidence Section */
+.evidence-section h4 {
+    color: var(--primary-dark);
+    font-size: 1rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.evidence-section h4 i {
+    color: var(--accent-color);
+}
+
+.evidence-list {
+    min-height: 100px;
+    background: var(--bg-light);
+    border-radius: 12px;
+    padding: 20px;
+    border: 2px dashed var(--border-color);
+}
+
+.empty-state {
+    text-align: center;
+    color: var(--text-light);
+    padding: 20px;
+}
+
+.empty-state i {
+    font-size: 40px;
+    color: var(--border-color);
+    margin-bottom: 10px;
+}
+
+.empty-state p {
+    font-size: 0.9rem;
+}
+
+/* Evidence Items */
+.evidence-item {
+    background: var(--bg-card);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 12px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.evidence-item:last-child {
+    margin-bottom: 0;
+}
+
+.evidence-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.evidence-item .evidence-info {
+    flex: 1;
+}
+
+.evidence-item .evidence-title {
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.evidence-item .evidence-date {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+/* Footer */
+.footer {
+    background: var(--primary-dark);
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-content p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.footer-content p:last-child {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .moe-logo {
+        height: 60px;
+    }
+    
+    .title-section h1 {
+        font-size: 1.6rem;
+    }
+    
+    .card-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    
+    .teacher-info p {
+        justify-content: center;
+    }
+    
+    .criteria-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-container {
+        gap: 10px;
+    }
+    
+    .nav-btn {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .main-nav {
+        display: none;
+    }
+    
+    .criteria-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    .header {
+        background: #1a7a6c !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.criteria-card {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.criteria-card:nth-child(1) { animation-delay: 0.05s; }
+.criteria-card:nth-child(2) { animation-delay: 0.1s; }
+.criteria-card:nth-child(3) { animation-delay: 0.15s; }
+.criteria-card:nth-child(4) { animation-delay: 0.2s; }
+.criteria-card:nth-child(5) { animation-delay: 0.25s; }
+.criteria-card:nth-child(6) { animation-delay: 0.3s; }
+.criteria-card:nth-child(7) { animation-delay: 0.35s; }
+.criteria-card:nth-child(8) { animation-delay: 0.4s; }
+.criteria-card:nth-child(9) { animation-delay: 0.45s; }
+.criteria-card:nth-child(10) { animation-delay: 0.5s; }
+.criteria-card:nth-child(11) { animation-delay: 0.55s; }
+.criteria-card:nth-child(12) { animation-delay: 0.6s; }
+.criteria-card:nth-child(13) { animation-delay: 0.65s; }
+.criteria-card:nth-child(14) { animation-delay: 0.7s; }
+.criteria-card:nth-child(15) { animation-delay: 0.75s; }
